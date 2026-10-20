@@ -1,0 +1,53 @@
+{
+  "name": "@algolift/mcp",
+  "version": "0.1.0",
+  "description": "An MCP server for AI assistants: futures prop firm rules with every rule's verification status and source, technical indicators tested against TA-Lib and pandas-ta, and Setup Odds' conditional frequencies on intraday bars. Read-only, no account, no API key.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "prop-firm",
+    "trading",
+    "technical-analysis",
+    "indicators",
+    "futures"
+  ],
+  "homepage": "https://github.com/algolift-ai/mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algolift-ai/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/algolift-ai/mcp/issues"
+  },
+  "license": "MIT",
+  "author": "AlgoLift LLC (https://www.algolift.ai)",
+  "type": "module",
+  "bin": {
+    "algolift-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/test.mjs",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@algolift/indicators": "0.1.0",
+    "@modelcontextprotocol/sdk": "1.31.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.27",
+    "esbuild": "0.28.1",
+    "typescript": "5.9.3"
+  }
+}

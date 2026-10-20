@@ -1,0 +1,4065 @@
+{
+  "schema": "algolift.setup-odds.calendar/1",
+  "version": "s1-e2",
+  "sources": {
+    "sessionCalendar": {
+      "file": "src/lib/market/session_calendar.json",
+      "version": 1,
+      "sha256": "60fad6581e763eb3aa3f385043e52da037eddedc04401948d187f2dd3e3fa48b"
+    },
+    "eventCalendar": {
+      "file": "src/lib/research/event_calendar.json",
+      "version": 2,
+      "sha256": "99a74c792a85944bc1443e1ae5cf7422b3dde8e3feeb43c48e21a7afbf67d5ce"
+    }
+  },
+  "timezone": "America/New_York",
+  "coverage": {
+    "start": "2018-01-01",
+    "end": "2027-12-31"
+  },
+  "session": {
+    "class": "futures_cme_equity",
+    "open": "18:00",
+    "close": "17:00",
+    "opensPreviousDay": true,
+    "rth": {
+      "open": "09:30",
+      "close": "16:00"
+    },
+    "weekends": false
+  },
+  "closures": {
+    "2018-01-01": "new_years_day",
+    "2018-03-30": "good_friday",
+    "2018-12-25": "christmas_day",
+    "2019-01-01": "new_years_day",
+    "2019-04-19": "good_friday",
+    "2019-12-25": "christmas_day",
+    "2020-01-01": "new_years_day",
+    "2020-04-10": "good_friday",
+    "2020-12-25": "christmas_day",
+    "2021-01-01": "new_years_day",
+    "2021-12-24": "christmas_day",
+    "2022-04-15": "good_friday",
+    "2022-12-26": "christmas_day",
+    "2023-01-02": "new_years_day",
+    "2023-12-25": "christmas_day",
+    "2024-01-01": "new_years_day",
+    "2024-03-29": "good_friday",
+    "2024-12-25": "christmas_day",
+    "2025-01-01": "new_years_day",
+    "2025-04-18": "good_friday",
+    "2025-12-25": "christmas_day",
+    "2026-01-01": "new_years_day",
+    "2026-12-25": "christmas_day",
+    "2027-01-01": "new_years_day",
+    "2027-03-26": "good_friday",
+    "2027-12-24": "christmas_day"
+  },
+  "earlyCloses": {
+    "2018-01-15": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2018-02-19": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2018-05-28": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2018-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2018-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2018-09-03": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2018-11-22": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2018-11-23": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2018-12-05": {
+      "rule": "national_day_of_mourning",
+      "close": "09:30"
+    },
+    "2018-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2019-01-21": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2019-02-18": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2019-05-27": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2019-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2019-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2019-09-02": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2019-11-28": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2019-11-29": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2019-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2020-01-20": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2020-02-17": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2020-05-25": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2020-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2020-09-07": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2020-11-26": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2020-11-27": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2020-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2021-01-18": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2021-02-15": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2021-04-02": {
+      "rule": "good_friday_when_open",
+      "close": "09:15"
+    },
+    "2021-05-31": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2021-07-05": {
+      "rule": "july_4_observed_monday",
+      "close": "13:00"
+    },
+    "2021-09-06": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2021-11-25": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2021-11-26": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2022-01-17": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2022-02-21": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2022-05-30": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2022-06-20": {
+      "rule": "juneteenth_observed",
+      "close": "13:00"
+    },
+    "2022-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2022-09-05": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2022-11-24": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2022-11-25": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2023-01-16": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2023-02-20": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2023-04-07": {
+      "rule": "good_friday_when_open",
+      "close": "09:15"
+    },
+    "2023-05-29": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2023-06-19": {
+      "rule": "juneteenth_weekday",
+      "close": "13:00"
+    },
+    "2023-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2023-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2023-09-04": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2023-11-23": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2023-11-24": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2024-01-15": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2024-02-19": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2024-05-27": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2024-06-19": {
+      "rule": "juneteenth_weekday",
+      "close": "13:00"
+    },
+    "2024-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2024-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2024-09-02": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2024-11-28": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2024-11-29": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2024-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2025-01-09": {
+      "rule": "national_day_of_mourning",
+      "close": "09:30"
+    },
+    "2025-01-20": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2025-02-17": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2025-05-26": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2025-06-19": {
+      "rule": "juneteenth_weekday",
+      "close": "13:00"
+    },
+    "2025-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2025-07-04": {
+      "rule": "july_4_weekday",
+      "close": "13:00"
+    },
+    "2025-09-01": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2025-11-27": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2025-11-28": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2025-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2026-01-19": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2026-02-16": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2026-04-03": {
+      "rule": "good_friday_when_open",
+      "close": "09:15"
+    },
+    "2026-05-25": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2026-06-19": {
+      "rule": "juneteenth_weekday",
+      "close": "13:00"
+    },
+    "2026-07-03": {
+      "rule": "july_3_weekday",
+      "close": "13:00"
+    },
+    "2026-09-07": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2026-11-26": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2026-11-27": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    },
+    "2026-12-24": {
+      "rule": "christmas_eve_weekday",
+      "close": "13:00"
+    },
+    "2027-01-18": {
+      "rule": "mlk_day",
+      "close": "13:00"
+    },
+    "2027-02-15": {
+      "rule": "presidents_day",
+      "close": "13:00"
+    },
+    "2027-05-31": {
+      "rule": "memorial_day",
+      "close": "13:00"
+    },
+    "2027-06-18": {
+      "rule": "juneteenth_observed",
+      "close": "13:00"
+    },
+    "2027-07-05": {
+      "rule": "july_4_observed_monday",
+      "close": "13:00"
+    },
+    "2027-09-06": {
+      "rule": "labor_day",
+      "close": "13:00"
+    },
+    "2027-11-25": {
+      "rule": "thanksgiving_day",
+      "close": "13:00"
+    },
+    "2027-11-26": {
+      "rule": "day_after_thanksgiving",
+      "close": "13:00"
+    }
+  },
+  "undecided": {
+    "2027-03-26": "nfp_release"
+  },
+  "events": {
+    "kinds": {
+      "fomc": {
+        "label": "FOMC decision",
+        "coverage": {
+          "start": "2017-01-01",
+          "end": "2027-12-31"
+        },
+        "releaseTimeEt": "14:00",
+        "provenance": "calendar-curated"
+      },
+      "cpi": {
+        "label": "CPI release",
+        "coverage": {
+          "start": "2017-01-01",
+          "end": "2026-12-31"
+        },
+        "releaseTimeEt": "08:30",
+        "provenance": "calendar-curated"
+      },
+      "nfp": {
+        "label": "NFP (Employment Situation)",
+        "coverage": {
+          "start": "2017-01-01",
+          "end": "2026-12-31"
+        },
+        "releaseTimeEt": "08:30",
+        "provenance": "calendar-curated"
+      },
+      "opex": {
+        "label": "Monthly options expiration",
+        "coverage": {
+          "start": "2017-01-01",
+          "end": "2027-12-31"
+        },
+        "releaseTimeEt": null,
+        "provenance": "convention-derived"
+      },
+      "roll": {
+        "label": "ES/NQ quarterly roll",
+        "coverage": {
+          "start": "2017-01-01",
+          "end": "2027-12-31"
+        },
+        "releaseTimeEt": null,
+        "provenance": "convention-derived"
+      }
+    },
+    "dates": [
+      {
+        "kind": "nfp",
+        "dateEt": "2017-01-06",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-01-18",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-01-20",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-02-01",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-02-03",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-02-15",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-02-17",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2017-03-09",
+        "tradingDay": null,
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-03-10",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-03-15",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-03-15",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-03-17",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-04-07",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-04-14",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-04-21",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-05-03",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-05-05",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-05-12",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-05-19",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-06-02",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2017-06-08",
+        "tradingDay": null,
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-06-14",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-06-14",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-06-16",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-07-07",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-07-14",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-07-21",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-07-26",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-08-04",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-08-11",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-08-18",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-09-01",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-09-14",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2017-09-14",
+        "tradingDay": null,
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-09-15",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-09-20",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-10-06",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-10-13",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-10-20",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-11-01",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-11-03",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-11-15",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-11-17",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2017-12-08",
+        "tradingDay": null,
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2017-12-13",
+        "tradingDay": null,
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2017-12-13",
+        "tradingDay": null,
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2017-12-14",
+        "tradingDay": null,
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2017-12-15",
+        "tradingDay": null,
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-01-05",
+        "tradingDay": "2018-01-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-01-12",
+        "tradingDay": "2018-01-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-01-19",
+        "tradingDay": "2018-01-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-01-31",
+        "tradingDay": "2018-01-31",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-02-02",
+        "tradingDay": "2018-02-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-02-14",
+        "tradingDay": "2018-02-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-02-16",
+        "tradingDay": "2018-02-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2018-03-08",
+        "tradingDay": "2018-03-08",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-03-09",
+        "tradingDay": "2018-03-09",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-03-13",
+        "tradingDay": "2018-03-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-03-16",
+        "tradingDay": "2018-03-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-03-21",
+        "tradingDay": "2018-03-21",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-04-06",
+        "tradingDay": "2018-04-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-04-11",
+        "tradingDay": "2018-04-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-04-20",
+        "tradingDay": "2018-04-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-05-02",
+        "tradingDay": "2018-05-02",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-05-04",
+        "tradingDay": "2018-05-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-05-10",
+        "tradingDay": "2018-05-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-05-18",
+        "tradingDay": "2018-05-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-06-01",
+        "tradingDay": "2018-06-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-06-12",
+        "tradingDay": "2018-06-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-06-13",
+        "tradingDay": "2018-06-13",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2018-06-14",
+        "tradingDay": "2018-06-14",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-06-15",
+        "tradingDay": "2018-06-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-07-06",
+        "tradingDay": "2018-07-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-07-12",
+        "tradingDay": "2018-07-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-07-20",
+        "tradingDay": "2018-07-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-08-01",
+        "tradingDay": "2018-08-01",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-08-03",
+        "tradingDay": "2018-08-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-08-10",
+        "tradingDay": "2018-08-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-08-17",
+        "tradingDay": "2018-08-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-09-07",
+        "tradingDay": "2018-09-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-09-13",
+        "tradingDay": "2018-09-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2018-09-13",
+        "tradingDay": "2018-09-13",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-09-21",
+        "tradingDay": "2018-09-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-09-26",
+        "tradingDay": "2018-09-26",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-10-05",
+        "tradingDay": "2018-10-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-10-11",
+        "tradingDay": "2018-10-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-10-19",
+        "tradingDay": "2018-10-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-11-02",
+        "tradingDay": "2018-11-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-11-08",
+        "tradingDay": "2018-11-08",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-11-14",
+        "tradingDay": "2018-11-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-11-16",
+        "tradingDay": "2018-11-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2018-12-07",
+        "tradingDay": "2018-12-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2018-12-12",
+        "tradingDay": "2018-12-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2018-12-13",
+        "tradingDay": "2018-12-13",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2018-12-19",
+        "tradingDay": "2018-12-19",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2018-12-21",
+        "tradingDay": "2018-12-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-01-04",
+        "tradingDay": "2019-01-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-01-11",
+        "tradingDay": "2019-01-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-01-18",
+        "tradingDay": "2019-01-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-01-30",
+        "tradingDay": "2019-01-30",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-02-01",
+        "tradingDay": "2019-02-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-02-13",
+        "tradingDay": "2019-02-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-02-15",
+        "tradingDay": "2019-02-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-03-08",
+        "tradingDay": "2019-03-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-03-12",
+        "tradingDay": "2019-03-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2019-03-14",
+        "tradingDay": "2019-03-14",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-03-15",
+        "tradingDay": "2019-03-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-03-20",
+        "tradingDay": "2019-03-20",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-04-05",
+        "tradingDay": "2019-04-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-04-10",
+        "tradingDay": "2019-04-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-04-18",
+        "tradingDay": "2019-04-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-05-01",
+        "tradingDay": "2019-05-01",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-05-03",
+        "tradingDay": "2019-05-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-05-10",
+        "tradingDay": "2019-05-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-05-17",
+        "tradingDay": "2019-05-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-06-07",
+        "tradingDay": "2019-06-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-06-12",
+        "tradingDay": "2019-06-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2019-06-13",
+        "tradingDay": "2019-06-13",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-06-19",
+        "tradingDay": "2019-06-19",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-06-21",
+        "tradingDay": "2019-06-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-07-05",
+        "tradingDay": "2019-07-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-07-11",
+        "tradingDay": "2019-07-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-07-19",
+        "tradingDay": "2019-07-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-07-31",
+        "tradingDay": "2019-07-31",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-08-02",
+        "tradingDay": "2019-08-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-08-13",
+        "tradingDay": "2019-08-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-08-16",
+        "tradingDay": "2019-08-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-09-06",
+        "tradingDay": "2019-09-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-09-12",
+        "tradingDay": "2019-09-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2019-09-12",
+        "tradingDay": "2019-09-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-09-18",
+        "tradingDay": "2019-09-18",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-09-20",
+        "tradingDay": "2019-09-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-10-04",
+        "tradingDay": "2019-10-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-10-10",
+        "tradingDay": "2019-10-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-10-18",
+        "tradingDay": "2019-10-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-10-30",
+        "tradingDay": "2019-10-30",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-11-01",
+        "tradingDay": "2019-11-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-11-13",
+        "tradingDay": "2019-11-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-11-15",
+        "tradingDay": "2019-11-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2019-12-06",
+        "tradingDay": "2019-12-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2019-12-11",
+        "tradingDay": "2019-12-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2019-12-11",
+        "tradingDay": "2019-12-11",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2019-12-12",
+        "tradingDay": "2019-12-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2019-12-20",
+        "tradingDay": "2019-12-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-01-10",
+        "tradingDay": "2020-01-10",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-01-14",
+        "tradingDay": "2020-01-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-01-17",
+        "tradingDay": "2020-01-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-01-29",
+        "tradingDay": "2020-01-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-02-07",
+        "tradingDay": "2020-02-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-02-13",
+        "tradingDay": "2020-02-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-02-21",
+        "tradingDay": "2020-02-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-03-03",
+        "tradingDay": "2020-03-03",
+        "label": "FOMC decision (emergency)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-03-06",
+        "tradingDay": "2020-03-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-03-11",
+        "tradingDay": "2020-03-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2020-03-12",
+        "tradingDay": "2020-03-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-03-15",
+        "tradingDay": "2020-03-16",
+        "label": "FOMC decision (emergency)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-03-20",
+        "tradingDay": "2020-03-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-04-03",
+        "tradingDay": "2020-04-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-04-10",
+        "tradingDay": "2020-04-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-04-17",
+        "tradingDay": "2020-04-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-04-29",
+        "tradingDay": "2020-04-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-05-08",
+        "tradingDay": "2020-05-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-05-12",
+        "tradingDay": "2020-05-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-05-15",
+        "tradingDay": "2020-05-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-06-05",
+        "tradingDay": "2020-06-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-06-10",
+        "tradingDay": "2020-06-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-06-10",
+        "tradingDay": "2020-06-10",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2020-06-11",
+        "tradingDay": "2020-06-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-06-19",
+        "tradingDay": "2020-06-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-07-02",
+        "tradingDay": "2020-07-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-07-14",
+        "tradingDay": "2020-07-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-07-17",
+        "tradingDay": "2020-07-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-07-29",
+        "tradingDay": "2020-07-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-08-07",
+        "tradingDay": "2020-08-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-08-12",
+        "tradingDay": "2020-08-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-08-21",
+        "tradingDay": "2020-08-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-09-04",
+        "tradingDay": "2020-09-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2020-09-10",
+        "tradingDay": "2020-09-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-09-11",
+        "tradingDay": "2020-09-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-09-16",
+        "tradingDay": "2020-09-16",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-09-18",
+        "tradingDay": "2020-09-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-10-02",
+        "tradingDay": "2020-10-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-10-13",
+        "tradingDay": "2020-10-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-10-16",
+        "tradingDay": "2020-10-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-11-05",
+        "tradingDay": "2020-11-05",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-11-06",
+        "tradingDay": "2020-11-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-11-12",
+        "tradingDay": "2020-11-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-11-20",
+        "tradingDay": "2020-11-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2020-12-04",
+        "tradingDay": "2020-12-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2020-12-10",
+        "tradingDay": "2020-12-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2020-12-10",
+        "tradingDay": "2020-12-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2020-12-16",
+        "tradingDay": "2020-12-16",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2020-12-18",
+        "tradingDay": "2020-12-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-01-08",
+        "tradingDay": "2021-01-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-01-13",
+        "tradingDay": "2021-01-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-01-15",
+        "tradingDay": "2021-01-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-01-27",
+        "tradingDay": "2021-01-27",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-02-05",
+        "tradingDay": "2021-02-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-02-10",
+        "tradingDay": "2021-02-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-02-19",
+        "tradingDay": "2021-02-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-03-05",
+        "tradingDay": "2021-03-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-03-10",
+        "tradingDay": "2021-03-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2021-03-11",
+        "tradingDay": "2021-03-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-03-17",
+        "tradingDay": "2021-03-17",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-03-19",
+        "tradingDay": "2021-03-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-04-02",
+        "tradingDay": "2021-04-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-04-13",
+        "tradingDay": "2021-04-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-04-16",
+        "tradingDay": "2021-04-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-04-28",
+        "tradingDay": "2021-04-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-05-07",
+        "tradingDay": "2021-05-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-05-12",
+        "tradingDay": "2021-05-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-05-21",
+        "tradingDay": "2021-05-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-06-04",
+        "tradingDay": "2021-06-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-06-10",
+        "tradingDay": "2021-06-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2021-06-10",
+        "tradingDay": "2021-06-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-06-16",
+        "tradingDay": "2021-06-16",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-06-18",
+        "tradingDay": "2021-06-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-07-02",
+        "tradingDay": "2021-07-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-07-13",
+        "tradingDay": "2021-07-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-07-16",
+        "tradingDay": "2021-07-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-07-28",
+        "tradingDay": "2021-07-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-08-06",
+        "tradingDay": "2021-08-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-08-11",
+        "tradingDay": "2021-08-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-08-20",
+        "tradingDay": "2021-08-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-09-03",
+        "tradingDay": "2021-09-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2021-09-09",
+        "tradingDay": "2021-09-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-09-14",
+        "tradingDay": "2021-09-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-09-17",
+        "tradingDay": "2021-09-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-09-22",
+        "tradingDay": "2021-09-22",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-10-08",
+        "tradingDay": "2021-10-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-10-13",
+        "tradingDay": "2021-10-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-10-15",
+        "tradingDay": "2021-10-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-11-03",
+        "tradingDay": "2021-11-03",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-11-05",
+        "tradingDay": "2021-11-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-11-10",
+        "tradingDay": "2021-11-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-11-19",
+        "tradingDay": "2021-11-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2021-12-03",
+        "tradingDay": "2021-12-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2021-12-09",
+        "tradingDay": "2021-12-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2021-12-10",
+        "tradingDay": "2021-12-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2021-12-15",
+        "tradingDay": "2021-12-15",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2021-12-17",
+        "tradingDay": "2021-12-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-01-07",
+        "tradingDay": "2022-01-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-01-12",
+        "tradingDay": "2022-01-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-01-21",
+        "tradingDay": "2022-01-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-01-26",
+        "tradingDay": "2022-01-26",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-02-04",
+        "tradingDay": "2022-02-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-02-10",
+        "tradingDay": "2022-02-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-02-18",
+        "tradingDay": "2022-02-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-03-04",
+        "tradingDay": "2022-03-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-03-10",
+        "tradingDay": "2022-03-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2022-03-10",
+        "tradingDay": "2022-03-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-03-16",
+        "tradingDay": "2022-03-16",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-03-18",
+        "tradingDay": "2022-03-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-04-01",
+        "tradingDay": "2022-04-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-04-12",
+        "tradingDay": "2022-04-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-04-14",
+        "tradingDay": "2022-04-14",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-05-04",
+        "tradingDay": "2022-05-04",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-05-06",
+        "tradingDay": "2022-05-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-05-11",
+        "tradingDay": "2022-05-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-05-20",
+        "tradingDay": "2022-05-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-06-03",
+        "tradingDay": "2022-06-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2022-06-09",
+        "tradingDay": "2022-06-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-06-10",
+        "tradingDay": "2022-06-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-06-15",
+        "tradingDay": "2022-06-15",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-06-17",
+        "tradingDay": "2022-06-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-07-08",
+        "tradingDay": "2022-07-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-07-13",
+        "tradingDay": "2022-07-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-07-15",
+        "tradingDay": "2022-07-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-07-27",
+        "tradingDay": "2022-07-27",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-08-05",
+        "tradingDay": "2022-08-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-08-10",
+        "tradingDay": "2022-08-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-08-19",
+        "tradingDay": "2022-08-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-09-02",
+        "tradingDay": "2022-09-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2022-09-08",
+        "tradingDay": "2022-09-08",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-09-13",
+        "tradingDay": "2022-09-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-09-16",
+        "tradingDay": "2022-09-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-09-21",
+        "tradingDay": "2022-09-21",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-10-07",
+        "tradingDay": "2022-10-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-10-13",
+        "tradingDay": "2022-10-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-10-21",
+        "tradingDay": "2022-10-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-11-02",
+        "tradingDay": "2022-11-02",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-11-04",
+        "tradingDay": "2022-11-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-11-10",
+        "tradingDay": "2022-11-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-11-18",
+        "tradingDay": "2022-11-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2022-12-02",
+        "tradingDay": "2022-12-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2022-12-08",
+        "tradingDay": "2022-12-08",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2022-12-13",
+        "tradingDay": "2022-12-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2022-12-14",
+        "tradingDay": "2022-12-14",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2022-12-16",
+        "tradingDay": "2022-12-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-01-06",
+        "tradingDay": "2023-01-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-01-12",
+        "tradingDay": "2023-01-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-01-20",
+        "tradingDay": "2023-01-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-02-01",
+        "tradingDay": "2023-02-01",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-02-03",
+        "tradingDay": "2023-02-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-02-14",
+        "tradingDay": "2023-02-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-02-17",
+        "tradingDay": "2023-02-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2023-03-09",
+        "tradingDay": "2023-03-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-03-10",
+        "tradingDay": "2023-03-10",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-03-14",
+        "tradingDay": "2023-03-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-03-17",
+        "tradingDay": "2023-03-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-03-22",
+        "tradingDay": "2023-03-22",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-04-07",
+        "tradingDay": "2023-04-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-04-12",
+        "tradingDay": "2023-04-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-04-21",
+        "tradingDay": "2023-04-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-05-03",
+        "tradingDay": "2023-05-03",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-05-05",
+        "tradingDay": "2023-05-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-05-10",
+        "tradingDay": "2023-05-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-05-19",
+        "tradingDay": "2023-05-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-06-02",
+        "tradingDay": "2023-06-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2023-06-08",
+        "tradingDay": "2023-06-08",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-06-13",
+        "tradingDay": "2023-06-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-06-14",
+        "tradingDay": "2023-06-14",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-06-16",
+        "tradingDay": "2023-06-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-07-07",
+        "tradingDay": "2023-07-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-07-12",
+        "tradingDay": "2023-07-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-07-21",
+        "tradingDay": "2023-07-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-07-26",
+        "tradingDay": "2023-07-26",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-08-04",
+        "tradingDay": "2023-08-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-08-10",
+        "tradingDay": "2023-08-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-08-18",
+        "tradingDay": "2023-08-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-09-01",
+        "tradingDay": "2023-09-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-09-13",
+        "tradingDay": "2023-09-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2023-09-14",
+        "tradingDay": "2023-09-14",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-09-15",
+        "tradingDay": "2023-09-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-09-20",
+        "tradingDay": "2023-09-20",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-10-06",
+        "tradingDay": "2023-10-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-10-12",
+        "tradingDay": "2023-10-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-10-20",
+        "tradingDay": "2023-10-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-11-01",
+        "tradingDay": "2023-11-01",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-11-03",
+        "tradingDay": "2023-11-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-11-14",
+        "tradingDay": "2023-11-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-11-17",
+        "tradingDay": "2023-11-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2023-12-08",
+        "tradingDay": "2023-12-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2023-12-12",
+        "tradingDay": "2023-12-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2023-12-13",
+        "tradingDay": "2023-12-13",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2023-12-14",
+        "tradingDay": "2023-12-14",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2023-12-15",
+        "tradingDay": "2023-12-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-01-05",
+        "tradingDay": "2024-01-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-01-11",
+        "tradingDay": "2024-01-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-01-19",
+        "tradingDay": "2024-01-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-01-31",
+        "tradingDay": "2024-01-31",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-02-02",
+        "tradingDay": "2024-02-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-02-13",
+        "tradingDay": "2024-02-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-02-16",
+        "tradingDay": "2024-02-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-03-08",
+        "tradingDay": "2024-03-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-03-12",
+        "tradingDay": "2024-03-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2024-03-14",
+        "tradingDay": "2024-03-14",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-03-15",
+        "tradingDay": "2024-03-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-03-20",
+        "tradingDay": "2024-03-20",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-04-05",
+        "tradingDay": "2024-04-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-04-10",
+        "tradingDay": "2024-04-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-04-19",
+        "tradingDay": "2024-04-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-05-01",
+        "tradingDay": "2024-05-01",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-05-03",
+        "tradingDay": "2024-05-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-05-15",
+        "tradingDay": "2024-05-15",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-05-17",
+        "tradingDay": "2024-05-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-06-07",
+        "tradingDay": "2024-06-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-06-12",
+        "tradingDay": "2024-06-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-06-12",
+        "tradingDay": "2024-06-12",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2024-06-13",
+        "tradingDay": "2024-06-13",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-06-21",
+        "tradingDay": "2024-06-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-07-05",
+        "tradingDay": "2024-07-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-07-11",
+        "tradingDay": "2024-07-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-07-19",
+        "tradingDay": "2024-07-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-07-31",
+        "tradingDay": "2024-07-31",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-08-02",
+        "tradingDay": "2024-08-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-08-14",
+        "tradingDay": "2024-08-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-08-16",
+        "tradingDay": "2024-08-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-09-06",
+        "tradingDay": "2024-09-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-09-11",
+        "tradingDay": "2024-09-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2024-09-12",
+        "tradingDay": "2024-09-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-09-18",
+        "tradingDay": "2024-09-18",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-09-20",
+        "tradingDay": "2024-09-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-10-04",
+        "tradingDay": "2024-10-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-10-10",
+        "tradingDay": "2024-10-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-10-18",
+        "tradingDay": "2024-10-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-11-01",
+        "tradingDay": "2024-11-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-11-07",
+        "tradingDay": "2024-11-07",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-11-13",
+        "tradingDay": "2024-11-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-11-15",
+        "tradingDay": "2024-11-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2024-12-06",
+        "tradingDay": "2024-12-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2024-12-11",
+        "tradingDay": "2024-12-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2024-12-12",
+        "tradingDay": "2024-12-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2024-12-18",
+        "tradingDay": "2024-12-18",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2024-12-20",
+        "tradingDay": "2024-12-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-01-10",
+        "tradingDay": "2025-01-10",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-01-15",
+        "tradingDay": "2025-01-15",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-01-17",
+        "tradingDay": "2025-01-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-01-29",
+        "tradingDay": "2025-01-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-02-07",
+        "tradingDay": "2025-02-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-02-12",
+        "tradingDay": "2025-02-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-02-21",
+        "tradingDay": "2025-02-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-03-07",
+        "tradingDay": "2025-03-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-03-12",
+        "tradingDay": "2025-03-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2025-03-13",
+        "tradingDay": "2025-03-13",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-03-19",
+        "tradingDay": "2025-03-19",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-03-21",
+        "tradingDay": "2025-03-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-04-04",
+        "tradingDay": "2025-04-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-04-10",
+        "tradingDay": "2025-04-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-04-17",
+        "tradingDay": "2025-04-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-05-02",
+        "tradingDay": "2025-05-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-05-07",
+        "tradingDay": "2025-05-07",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-05-13",
+        "tradingDay": "2025-05-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-05-16",
+        "tradingDay": "2025-05-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-06-06",
+        "tradingDay": "2025-06-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-06-11",
+        "tradingDay": "2025-06-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2025-06-12",
+        "tradingDay": "2025-06-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-06-18",
+        "tradingDay": "2025-06-18",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-06-20",
+        "tradingDay": "2025-06-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-07-03",
+        "tradingDay": "2025-07-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-07-15",
+        "tradingDay": "2025-07-15",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-07-18",
+        "tradingDay": "2025-07-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-07-30",
+        "tradingDay": "2025-07-30",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-08-01",
+        "tradingDay": "2025-08-01",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-08-12",
+        "tradingDay": "2025-08-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-08-15",
+        "tradingDay": "2025-08-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-09-05",
+        "tradingDay": "2025-09-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-09-11",
+        "tradingDay": "2025-09-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2025-09-11",
+        "tradingDay": "2025-09-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-09-17",
+        "tradingDay": "2025-09-17",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-09-19",
+        "tradingDay": "2025-09-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-10-17",
+        "tradingDay": "2025-10-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-10-24",
+        "tradingDay": "2025-10-24",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-10-29",
+        "tradingDay": "2025-10-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-11-20",
+        "tradingDay": "2025-11-20",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-11-21",
+        "tradingDay": "2025-11-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2025-12-10",
+        "tradingDay": "2025-12-10",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2025-12-11",
+        "tradingDay": "2025-12-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2025-12-16",
+        "tradingDay": "2025-12-16",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2025-12-18",
+        "tradingDay": "2025-12-18",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2025-12-19",
+        "tradingDay": "2025-12-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-01-09",
+        "tradingDay": "2026-01-09",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-01-13",
+        "tradingDay": "2026-01-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-01-16",
+        "tradingDay": "2026-01-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-01-28",
+        "tradingDay": "2026-01-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-02-11",
+        "tradingDay": "2026-02-11",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-02-13",
+        "tradingDay": "2026-02-13",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-02-20",
+        "tradingDay": "2026-02-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-03-06",
+        "tradingDay": "2026-03-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-03-11",
+        "tradingDay": "2026-03-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2026-03-12",
+        "tradingDay": "2026-03-12",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-03-18",
+        "tradingDay": "2026-03-18",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-03-20",
+        "tradingDay": "2026-03-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-04-03",
+        "tradingDay": "2026-04-03",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-04-10",
+        "tradingDay": "2026-04-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-04-17",
+        "tradingDay": "2026-04-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-04-29",
+        "tradingDay": "2026-04-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-05-08",
+        "tradingDay": "2026-05-08",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-05-12",
+        "tradingDay": "2026-05-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-05-15",
+        "tradingDay": "2026-05-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-06-05",
+        "tradingDay": "2026-06-05",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-06-10",
+        "tradingDay": "2026-06-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2026-06-11",
+        "tradingDay": "2026-06-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-06-17",
+        "tradingDay": "2026-06-17",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-06-18",
+        "tradingDay": "2026-06-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-07-02",
+        "tradingDay": "2026-07-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-07-14",
+        "tradingDay": "2026-07-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-07-17",
+        "tradingDay": "2026-07-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-07-29",
+        "tradingDay": "2026-07-29",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-08-07",
+        "tradingDay": "2026-08-07",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-08-12",
+        "tradingDay": "2026-08-12",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-08-21",
+        "tradingDay": "2026-08-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-09-04",
+        "tradingDay": "2026-09-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2026-09-10",
+        "tradingDay": "2026-09-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-09-11",
+        "tradingDay": "2026-09-11",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-09-16",
+        "tradingDay": "2026-09-16",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-09-18",
+        "tradingDay": "2026-09-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-10-02",
+        "tradingDay": "2026-10-02",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-10-14",
+        "tradingDay": "2026-10-14",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-10-16",
+        "tradingDay": "2026-10-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-10-28",
+        "tradingDay": "2026-10-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-11-06",
+        "tradingDay": "2026-11-06",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-11-10",
+        "tradingDay": "2026-11-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-11-20",
+        "tradingDay": "2026-11-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "nfp",
+        "dateEt": "2026-12-04",
+        "tradingDay": "2026-12-04",
+        "label": "NFP (Employment Situation)",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2026-12-09",
+        "tradingDay": "2026-12-09",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "cpi",
+        "dateEt": "2026-12-10",
+        "tradingDay": "2026-12-10",
+        "label": "CPI release",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2026-12-10",
+        "tradingDay": "2026-12-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2026-12-18",
+        "tradingDay": "2026-12-18",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-01-15",
+        "tradingDay": "2027-01-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-01-27",
+        "tradingDay": "2027-01-27",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-02-19",
+        "tradingDay": "2027-02-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2027-03-11",
+        "tradingDay": "2027-03-11",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-03-17",
+        "tradingDay": "2027-03-17",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-03-19",
+        "tradingDay": "2027-03-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-04-16",
+        "tradingDay": "2027-04-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-04-28",
+        "tradingDay": "2027-04-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-05-21",
+        "tradingDay": "2027-05-21",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-06-09",
+        "tradingDay": "2027-06-09",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2027-06-10",
+        "tradingDay": "2027-06-10",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-06-17",
+        "tradingDay": "2027-06-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-07-16",
+        "tradingDay": "2027-07-16",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-07-28",
+        "tradingDay": "2027-07-28",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-08-20",
+        "tradingDay": "2027-08-20",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2027-09-09",
+        "tradingDay": "2027-09-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-09-15",
+        "tradingDay": "2027-09-15",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-09-17",
+        "tradingDay": "2027-09-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-10-15",
+        "tradingDay": "2027-10-15",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-10-27",
+        "tradingDay": "2027-10-27",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-11-19",
+        "tradingDay": "2027-11-19",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "fomc",
+        "dateEt": "2027-12-08",
+        "tradingDay": "2027-12-08",
+        "label": "FOMC decision",
+        "provenance": "calendar-curated"
+      },
+      {
+        "kind": "roll",
+        "dateEt": "2027-12-09",
+        "tradingDay": "2027-12-09",
+        "label": "ES/NQ quarterly roll",
+        "provenance": "convention-derived"
+      },
+      {
+        "kind": "opex",
+        "dateEt": "2027-12-17",
+        "tradingDay": "2027-12-17",
+        "label": "Monthly options expiration",
+        "provenance": "convention-derived"
+      }
+    ]
+  },
+  "utcOffsets": {
+    "America/New_York": [
+      ["2017-01-01T00:00:00Z", -300],
+      ["2017-03-12T07:00:00Z", -240],
+      ["2017-11-05T06:00:00Z", -300],
+      ["2018-03-11T07:00:00Z", -240],
+      ["2018-11-04T06:00:00Z", -300],
+      ["2019-03-10T07:00:00Z", -240],
+      ["2019-11-03T06:00:00Z", -300],
+      ["2020-03-08T07:00:00Z", -240],
+      ["2020-11-01T06:00:00Z", -300],
+      ["2021-03-14T07:00:00Z", -240],
+      ["2021-11-07T06:00:00Z", -300],
+      ["2022-03-13T07:00:00Z", -240],
+      ["2022-11-06T06:00:00Z", -300],
+      ["2023-03-12T07:00:00Z", -240],
+      ["2023-11-05T06:00:00Z", -300],
+      ["2024-03-10T07:00:00Z", -240],
+      ["2024-11-03T06:00:00Z", -300],
+      ["2025-03-09T07:00:00Z", -240],
+      ["2025-11-02T06:00:00Z", -300],
+      ["2026-03-08T07:00:00Z", -240],
+      ["2026-11-01T06:00:00Z", -300],
+      ["2027-03-14T07:00:00Z", -240],
+      ["2027-11-07T06:00:00Z", -300],
+      ["2028-03-12T07:00:00Z", -240],
+      ["2028-11-05T06:00:00Z", -300]
+    ],
+    "America/Chicago": [
+      ["2017-01-01T00:00:00Z", -360],
+      ["2017-03-12T08:00:00Z", -300],
+      ["2017-11-05T07:00:00Z", -360],
+      ["2018-03-11T08:00:00Z", -300],
+      ["2018-11-04T07:00:00Z", -360],
+      ["2019-03-10T08:00:00Z", -300],
+      ["2019-11-03T07:00:00Z", -360],
+      ["2020-03-08T08:00:00Z", -300],
+      ["2020-11-01T07:00:00Z", -360],
+      ["2021-03-14T08:00:00Z", -300],
+      ["2021-11-07T07:00:00Z", -360],
+      ["2022-03-13T08:00:00Z", -300],
+      ["2022-11-06T07:00:00Z", -360],
+      ["2023-03-12T08:00:00Z", -300],
+      ["2023-11-05T07:00:00Z", -360],
+      ["2024-03-10T08:00:00Z", -300],
+      ["2024-11-03T07:00:00Z", -360],
+      ["2025-03-09T08:00:00Z", -300],
+      ["2025-11-02T07:00:00Z", -360],
+      ["2026-03-08T08:00:00Z", -300],
+      ["2026-11-01T07:00:00Z", -360],
+      ["2027-03-14T08:00:00Z", -300],
+      ["2027-11-07T07:00:00Z", -360],
+      ["2028-03-12T08:00:00Z", -300],
+      ["2028-11-05T07:00:00Z", -360]
+    ]
+  },
+  "offsetRange": {
+    "start": "2017-01-01T00:00:00Z",
+    "end": "2029-01-01T00:00:00Z"
+  }
+}

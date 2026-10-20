@@ -1,0 +1,26 @@
+@algolift/mcp
+Copyright (c) 2026 AlgoLift LLC. MIT License (LICENSE).
+
+This package bundles, or depends on, the following. Each keeps its own notice.
+
+1. Prop firm rules (data/prop-firm-rules.json)
+   From https://github.com/algolift-ai/prop-firm-rules, by AlgoLift.
+   Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0),
+   https://creativecommons.org/licenses/by/4.0/
+   Credit: "Prop firm rules by AlgoLift (algolift.ai)".
+   Firm names identify which firm a rule belongs to. They belong to their
+   owners; this project is not affiliated with or endorsed by any firm.
+
+2. Setup Odds engine (src/lib/tools/setupOdds/engine) and its calendar
+   (data/setup-odds-calendar.json)
+   From https://github.com/algolift-ai/setup-odds. MIT License, its notice kept
+   in src/lib/tools/setupOdds/engine/LICENSE:
+     Copyright (c) 2026 AlgoLift LLC
+
+3. @algolift/indicators (an npm dependency, not bundled)
+   https://github.com/algolift-ai/indicators. MIT License. Its formulas are
+   ported from TA-Lib (BSD-3-Clause), pandas-ta-classic, pandas-ta and
+   technicalindicators (MIT), whose notices are in that package's NOTICE.
+
+4. @modelcontextprotocol/sdk (an npm dependency, not bundled)
+   https://github.com/modelcontextprotocol/typescript-sdk. MIT License.
