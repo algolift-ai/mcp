@@ -46,7 +46,7 @@
     "@modelcontextprotocol/sdk": "1.32.1"
   },
   "devDependencies": {
-    "@types/node": "20.19.27",
+    "@types/node": "25.9.9",
     "esbuild": "0.28.2",
     "typescript": "5.9.3"
   }
