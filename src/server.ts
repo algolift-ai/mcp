@@ -36,7 +36,7 @@ import { CARD_CAPABILITIES, createToolset, LOCAL_LIMITS, SERVER_ICONS, SITE, Unk
 import { loadCalendar } from "./lib/tools/setupOdds/engine/index";
 
 /** This package's version (a test holds it to package.json). */
-export const VERSION = "0.1.0";
+export const VERSION = "0.1.1";
 
 /** The bundled prop firm rules: the public dataset's release, and the rules themselves. */
 export const PROP_RULES = rulesJson as unknown as { source: string; license: string; dataset_version: string | null; bundle: RulesBundle };
