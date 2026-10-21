@@ -2,6 +2,17 @@
 
 Every release is dated. A release that carries a new prop firm rules dataset names the dataset's version and the dates its rules were checked.
 
+## 0.1.1 (2026-10-21)
+
+- The prop firm rules dataset 0.1.0, now built from the published registry version 2 (2026-10-21). Changed rules, each checked against the firm's page on 2026-10-21:
+  - TradeDay Quick Pay (50K to 150K): the profit split is 50%, rising to 80% on profit above $4,000 (a flat 80% before).
+  - TradeDay Fast Pass and Quick Pay: $250 is the minimum payout request (`payouts.min_payout_amount`), not a profit minimum (`payouts.min_profit` is now none).
+  - My Funded Futures Builder 50K: a $100,000 lifetime sim payout cap.
+  - Tradeify Growth 25K: $1,750 of profit before the first payout, then $250.
+  - The simulation notes of 48 plans rewritten against the verified rules.
+- `@modelcontextprotocol/sdk` 1.32.1 (from 1.31.0); its changes do not touch this server.
+- CI: `actions/checkout` and `actions/setup-node` 7; `esbuild` 0.28.2.
+
 ## 0.1.0 (2026-10-19)
 
 The first release, with the prop firm rules dataset 0.1.0 (the published registry, version 1).

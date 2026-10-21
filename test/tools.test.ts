@@ -9,7 +9,7 @@ import { calculate } from "@algolift/indicators";
 import calendarJson from "../data/setup-odds-calendar.json";
 import { createToolset, LOCAL_LIMITS, resolvePlan, STATUS_TAG, type PlanFile, type RulesBundle, type ToolResult } from "../src/lib/mcp/index";
 import { demoBars, formatResultText, listPresets, loadCalendar, runSetupOdds, type RunResult } from "../src/lib/tools/setupOdds/engine/index";
-import { createDefaultToolset, PROP_RULES, SITE_PAGES } from "../src/server";
+import { createDefaultToolset, PROP_RULES, SITE_PAGES, VERSION } from "../src/server";
 
 const ts = createDefaultToolset({ today: () => "2026-10-16" });
 const text = (r: ToolResult) => r.content.map((c) => c.text).join("\n");
@@ -53,7 +53,12 @@ test("the bundled dataset is versioned and dated", () => {
     const r = ts.call("list_prop_firms", {});
     assert.match(
         text(r),
-        /Dataset: AlgoLift prop firm rules 0\.1\.0 \(bundled in @algolift\/mcp 0\.1\.0\), \d+ plans from \d+ firms, rules checked (on \d{4}-\d{2}-\d{2}|\d{4}-\d{2}-\d{2} to \d{4}-\d{2}-\d{2})\./,
+        // The server's own version (VERSION in src/server.ts), so a release bump does not break the check.
+        new RegExp(
+            String.raw`Dataset: AlgoLift prop firm rules 0\.1\.0 \(bundled in @algolift\/mcp ` +
+                VERSION.replace(/\./g, "\\.") +
+                String.raw`\), \d+ plans from \d+ firms, rules checked (on \d{4}-\d{2}-\d{2}|\d{4}-\d{2}-\d{2} to \d{4}-\d{2}-\d{2})\.`,
+        ),
     );
 });
 

@@ -1,6 +1,6 @@
 {
   "name": "@algolift/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An MCP server for AI assistants: futures prop firm rules with every rule's verification status and source, technical indicators tested against TA-Lib and pandas-ta, and Setup Odds' conditional frequencies on intraday bars. Read-only, no account, no API key.",
   "keywords": [
     "mcp",
