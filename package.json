@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@algolift/indicators": "0.1.0",
-    "@modelcontextprotocol/sdk": "1.32.1"
+    "@modelcontextprotocol/sdk": "1.32.2"
   },
   "devDependencies": {
     "@types/node": "20.19.27",
